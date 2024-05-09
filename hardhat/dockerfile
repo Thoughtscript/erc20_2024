@@ -6,6 +6,8 @@ WORKDIR /app
 COPY . .
 
 RUN npm i npx
-RUN npm i hardhat@2.22.3 -g
+RUN npm i
 
-CMD ["npx", "hardhat", "node", "--network", "0.0.0.0"]
+# Can't pass --network here in node
+# https://github.com/NomicFoundation/hardhat/issues/2449
+CMD ["npx", "hardhat", "node"]

@@ -1,0 +1,23 @@
+{
+    "name": "hardhat_network",
+    "version": "1.0.0",
+    "description": "Hardhat local testnet",
+    "scripts": {
+      "stop-win": "Taskkill /IM node.exe /F",
+      "stop-linux": "killall node"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Thoughtscript/erc20_2024"
+    },
+    "license": "UNLICENSED",
+    "keywords": [
+      "hardhat"
+    ],
+    "author": "Adam I. Gerard",
+    "devDependencies": {
+      "hardhat": "=2.22.3"
+    },
+    "dependencies": {
+    }
+  }
