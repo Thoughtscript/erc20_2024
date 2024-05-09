@@ -11,4 +11,4 @@ RUN npm run build-parcel
 
 # --host must be set here to bind any local docker host ip to the specified port
 # the port number is set in angular.json under server.options.port otherwise it'll be random
-# CMD [ "npx", "serve", "dist"]
+CMD [ "npx", "serve", "dist"]

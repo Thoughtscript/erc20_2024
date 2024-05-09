@@ -6,6 +6,6 @@ WORKDIR /app
 COPY . .
 
 RUN npm i npx
-RUN npm i hardhat -g
+RUN npm i hardhat@2.22.3 -g
 
 CMD ["npx", "hardhat", "node", "--network", "0.0.0.0"]
