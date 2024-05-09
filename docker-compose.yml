@@ -1,0 +1,26 @@
+services:
+  kurtosis:
+    build:
+      context: ./kurtosis
+      dockerfile: dockerfile
+    ports:
+      - '60239:60239'
+    networks:
+      - testnet
+    restart: unless-stopped
+
+  #react:
+  #  build:
+  #    context: ./react
+  #    dockerfile: dockerfile
+  #  ports:
+  #    - '443:443'
+  #  depends_on:
+  #    - kurtosis
+  #  networks:
+  #    - testnet
+   # restart: unless-stopped
+
+networks:
+  testnet:
+    driver: bridge
