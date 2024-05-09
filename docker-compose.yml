@@ -1,25 +1,25 @@
 services:
-  kurtosis:
+  hardhat:
     build:
-      context: ./kurtosis
+      context: ./hardhat
       dockerfile: dockerfile
     ports:
-      - '60239:60239'
+      - '8545:8545'
     networks:
       - testnet
     restart: unless-stopped
 
-  #react:
-  #  build:
-  #    context: ./react
-  #    dockerfile: dockerfile
-  #  ports:
-  #    - '443:443'
-  #  depends_on:
-  #    - kurtosis
-  #  networks:
-  #    - testnet
-   # restart: unless-stopped
+  react:
+    build:
+      context: ./react
+      dockerfile: dockerfile
+    ports:
+      - '443:443'
+    depends_on:
+      - hardhat
+    networks:
+      - testnet
+    restart: unless-stopped
 
 networks:
   testnet:
