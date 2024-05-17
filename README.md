@@ -7,13 +7,19 @@
 Some big changes:
 
 1. [Hard Hat](https://hardhat.org/hardhat-network/docs/overview) is now preferred [post-Truffle and Ganache](https://archive.trufflesuite.com/docs/truffle/how-to/migrate-to-hardhat/)
+2. `ethers` is often used instead of the older `web3` library now.
 
 ## Installation
 
 ```bash
-docker-compose up
+# Copies contracts dir into both containers for:
+## 1.) Compilation for generating frontend facade and ABI's
+## 2.) Compilation and deployment
+bash run.sh
 ```
 
 ## Resources and Links
 
 1. https://hardhat.org/hardhat-network/docs/overview
+2. https://wizard.openzeppelin.com/#erc20
+3. https://github.com/NomicFoundation/hardhat-ignition-examples/tree/main
