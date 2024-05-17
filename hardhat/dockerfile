@@ -11,8 +11,5 @@ RUN npm i npx
 # Compile and deploy contracts to local testnet
 # https://hardhat.org/hardhat-runner/docs/guides/deploying
 RUN cd contracts && npx hardhat compile
-# RUN npx hardhat deploy ./contracts/MyCoinDeploy.js --network localhost
 
-# Can't pass --network here in node
-# https://github.com/NomicFoundation/hardhat/issues/2449
-CMD ["npx", "hardhat", "node"]
+CMD ["bash", "network_deploy.sh"]

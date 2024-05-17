@@ -7,7 +7,7 @@
 Some big changes:
 
 1. [Hard Hat](https://hardhat.org/hardhat-network/docs/overview) is now preferred [post-Truffle and Ganache](https://archive.trufflesuite.com/docs/truffle/how-to/migrate-to-hardhat/)
-2. `ethers` is often used instead of the older `web3` library now.
+2. [ethers](https://www.npmjs.com/package/ethers) is better maintained and typically used now instead of [web3](https://www.npmjs.com/package/web3).
 
 ## Installation
 
