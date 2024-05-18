@@ -5,6 +5,7 @@ header {
     height: 90px;
     width: 100%;
     background: black;
+    opacity: .85;
 }
 
 header::before {

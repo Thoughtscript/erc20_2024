@@ -11,7 +11,7 @@ export const mapToArr = mp => {
 
     const K = Object.keys(mp)
 
-    for (let i = 0; i < K; i++) {
+    for (let i = 0; i < K.length; i++) {
         let temp = [K[i], mp[K[i]]]
         result.push(temp)
     }

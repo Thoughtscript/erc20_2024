@@ -24,7 +24,7 @@ export class MyCoin extends React.Component {
                 "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC": 0,
                 "0xdD2FD4581271e230360230F9337D5c0430Bf44C0": 0,
                 "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955": 0,
-                CONTRACT_ADDRESS: 0
+                [`${CONTRACT_ADDRESS}`]: 0
             },
             accounts: [],
             ...this.props
