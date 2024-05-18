@@ -11,6 +11,7 @@ import UnsplashSection from '../../Presentation/UnsplashSection'
 import './MyCoin.css'
 import { network, balance } from '../../../Helpers/ERC20Facade'
 import { mapToArr } from '../../../Helpers/Generic'
+import { CONTRACT_ADDRESS } from '../../../Constants'
 
 export class MyCoin extends React.Component {
     constructor(props) {
@@ -22,7 +23,8 @@ export class MyCoin extends React.Component {
                 "0xa0Ee7A142d267C1f36714E4a8F75612F20a79720": 0,
                 "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC": 0,
                 "0xdD2FD4581271e230360230F9337D5c0430Bf44C0": 0,
-                "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955": 0
+                "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955": 0,
+                CONTRACT_ADDRESS: 0
             },
             accounts: [],
             ...this.props
@@ -77,7 +79,7 @@ export class MyCoin extends React.Component {
                             { 
                                 (accounts).map(a =>
                                     <tr key={a[0]}>
-                                        <th>{a[0]}</th>
+                                        <th>{a[0] === CONTRACT_ADDRESS ? `MyCoin ${a[0]}`: a[0]}</th>
                                         <th>{a[1]} ETH</th>
                                     </tr>
                                 )
