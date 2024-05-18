@@ -1,4 +1,5 @@
 FROM node:lts
+# hardhat only supports lts
 
 RUN echo "Creating working dir and copying files"
 RUN mkdir /app

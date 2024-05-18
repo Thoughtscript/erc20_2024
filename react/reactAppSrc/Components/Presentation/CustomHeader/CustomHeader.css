@@ -4,12 +4,7 @@ header {
     position: fixed;
     height: 90px;
     width: 100%;
-    opacity:.9;
-    border-bottom: 1px solid black;
-    box-shadow: 2px 5px 9px 5px black;
-    background: #283c86; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #283c86, #45a247); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #283c86, #45a247); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: black;
 }
 
 header > h2 {

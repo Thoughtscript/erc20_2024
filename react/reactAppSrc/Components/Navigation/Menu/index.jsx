@@ -8,7 +8,7 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { API_PATH, BASE_PATH, HOME_PATH } from '../../../Constants'
+import { COIN_PATH, BASE_PATH, HOME_PATH } from '../../../Constants'
 
 let w = window.location.pathname
 
@@ -27,22 +27,22 @@ export class Menu extends React.Component {
                         <Link onClick={() => {
                             w = BASE_PATH;
                             this.home.current.className = 'active';
-                            this.api.current.className = 'inactive';
+                            this.mycoin.current.className = 'inactive';
                         }}
                             ref={this.home}
                             className={(w === BASE_PATH || w === HOME_PATH) ? 'active' : 'inactive'}
                             to={BASE_PATH}>Home</Link>
                     </li>
 
-                    <li className="api">
+                    <li className="mycoin">
                         <Link onClick={() => {
                             w = BASE_PATH;
                             this.home.current.className = 'inactive';
-                            this.api.current.className = 'active';
+                            this.mycoin.current.className = 'active';
                         }}
-                            ref={this.api}
-                            className={(w === API_PATH) ? 'active' : 'inactive'}
-                            to={API_PATH}>API</Link>
+                            ref={this.mycoin}
+                            className={(w === COIN_PATH) ? 'active' : 'inactive'}
+                            to={COIN_PATH}>MyCoin</Link>
                     </li>
                 </ul>
             </nav>)

@@ -23,3 +23,4 @@ bash run.sh
 1. https://hardhat.org/hardhat-network/docs/overview
 2. https://wizard.openzeppelin.com/#erc20
 3. https://github.com/NomicFoundation/hardhat-ignition-examples/tree/main
+4. https://moralis.io/ethers-js-tutorial-how-to-get-started-using-a-simple-ethers-js-example/

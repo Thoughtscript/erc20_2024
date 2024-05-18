@@ -10,5 +10,9 @@
 export const
     BASE_PATH = '/',
     HOME_PATH = '/home',
-    API_PATH = '/api',
-    RAILS_API_URL = 'http://localhost:3000/dinosaurs/'
+    COIN_PATH = '/mycoin',
+
+//Dapp config
+    CONTRACT_ADDRESS = '0x5fbdb2315678afecb367f032d93f642f64180aa3',
+    HARDHAT_NETWORK = 'http://localhost:8545'
+   

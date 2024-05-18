@@ -8,36 +8,39 @@
 
 import React from 'react'
 import UnsplashSection from '../../Presentation/UnsplashSection'
-import './RailsPage.css'
+import './MyCoin.css'
 import YouTubeComponent from "../../Presentation/YouTubeComponent";
-import { asyncGet } from '../../../Helpers/Xhr/Get'
-import { RAILS_API_URL } from '../../../Constants'
+import { network, balance } from '../../../Helpers/ERC20Facade'
+import { CONTRACT_ADDRESS } from '../../../Constants'
 
-export class RailsPage extends React.Component {
+export class MyCoin extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            dinos: [],
+            provider: undefined,
+            balance: 0,
             ...this.props
         }
     }
 
     componentDidMount() {
-        // Add IndexDB check here.
-        // Check time and empty array.
         try {
-            asyncGet(RAILS_API_URL).then(success => {
-                this.setState({
-                    dinos: JSON.parse(success)
+            network().connect().then(provider => {
+                balance("0xbDA5747bFD65F08deb54cb465eB87D40e51B197E").then(balance => {
+                    this.setState({
+                        provider: provider,
+                        balance: `${balance / BigInt('1000000000000000000')}`,
+                    })
                 })
             })
+
         } catch (ex) {
             console.log(ex)
         }
     }
 
     render() {
-        const { dinos } = this.state
+        const { balance } = this.state
 
         return (
             <main className="landingPage">
@@ -46,19 +49,15 @@ export class RailsPage extends React.Component {
                     <table>
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Balance</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {
-                                (dinos).map(p =>
-                                    <tr key={p.id}>
-                                        <th>{p.id}</th>
-                                        <th>{p.name}</th>
-                                    </tr>
-                                )
-                            }
+                            <tr>
+                                <th>{CONTRACT_ADDRESS}</th>
+                                <th>{balance} ETH</th>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
