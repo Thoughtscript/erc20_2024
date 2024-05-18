@@ -50,6 +50,7 @@ export class MyCoin extends React.Component {
                     }
 
                     this.setState({
+                        accountMap: temp,
                         accounts: mapToArr(temp)
                     })
                 })

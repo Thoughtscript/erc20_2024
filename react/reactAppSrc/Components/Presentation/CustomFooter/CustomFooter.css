@@ -26,6 +26,6 @@ footer > ul > li > a {
 
 footer > ul > li > a:hover {
     opacity: .7;
-    transition: 1.25s all;
+    transition: .75s all;
     border-left: 6.5px solid deeppink;
 }
