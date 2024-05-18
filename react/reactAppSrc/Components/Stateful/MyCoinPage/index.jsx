@@ -9,16 +9,22 @@
 import React from 'react'
 import UnsplashSection from '../../Presentation/UnsplashSection'
 import './MyCoin.css'
-import YouTubeComponent from "../../Presentation/YouTubeComponent";
 import { network, balance } from '../../../Helpers/ERC20Facade'
-import { CONTRACT_ADDRESS } from '../../../Constants'
+import { mapToArr } from '../../../Helpers/Generic'
 
 export class MyCoin extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            provider: undefined,
-            balance: 0,
+            accountMap: {
+                "0xbDA5747bFD65F08deb54cb465eB87D40e51B197E": 0,
+                "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc": 0,
+                "0xa0Ee7A142d267C1f36714E4a8F75612F20a79720": 0,
+                "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC": 0,
+                "0xdD2FD4581271e230360230F9337D5c0430Bf44C0": 0,
+                "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955": 0
+            },
+            accounts: [],
             ...this.props
         }
     }
@@ -26,10 +32,23 @@ export class MyCoin extends React.Component {
     componentDidMount() {
         try {
             network().connect().then(provider => {
-                balance("0xbDA5747bFD65F08deb54cb465eB87D40e51B197E").then(balance => {
+                const K = Object.keys(this.state.accountMap)
+
+                let promises = []
+
+                for (let i = 0; i < K.length; i++) {
+                    promises.push(balance(K[i]))
+                }
+
+                Promise.all(promises).then(success => {
+                    let temp = Object.assign({}, this.state.accountMap)
+
+                    for (let i = 0 ; i < success.length; i++) {
+                        temp[K[i]] = `${success[i] / 1000000000000000000n}`
+                    }
+
                     this.setState({
-                        provider: provider,
-                        balance: `${balance / BigInt('1000000000000000000')}`,
+                        accounts: mapToArr(temp)
                     })
                 })
             })
@@ -40,11 +59,12 @@ export class MyCoin extends React.Component {
     }
 
     render() {
-        const { balance } = this.state
+        const { accounts } = this.state
 
         return (
             <main className="landingPage">
-                <UnsplashSection photo={'1591858219137-84737f6e8a67'} ixid={'eyJhcHBfaWQiOjEyMDd9'} />
+                <UnsplashSection photo={'1559251606-c623743a6d76'} ixid={'M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} w={'3870'}/>
+                
                 <div className="content">
                     <table>
                         <thead>
@@ -54,14 +74,29 @@ export class MyCoin extends React.Component {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th>{CONTRACT_ADDRESS}</th>
-                                <th>{balance} ETH</th>
-                            </tr>
+                            { 
+                                (accounts).map(a =>
+                                    <tr key={a[0]}>
+                                        <th>{a[0]}</th>
+                                        <th>{a[1]} ETH</th>
+                                    </tr>
+                                )
+                            }
                         </tbody>
                     </table>
                 </div>
-                <YouTubeComponent className="more" url={"https://www.youtube.com/embed/W93XyXHI8Nw"} />
+
+                <div className="content">
+                    <div className="text">
+                        Lorem Ipsum
+                    </div>
+                </div> 
+                       
+                <div className="content">
+                    <div className="text">
+                        Lorem Ipsum
+                    </div>
+                </div>
             </main>
         )
     }

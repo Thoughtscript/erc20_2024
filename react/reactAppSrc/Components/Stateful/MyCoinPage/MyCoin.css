@@ -1,17 +1,3 @@
-main.landingPage {
-
-}
-
-main.landingPage > .content {
-    width: 100%;
-    /* height: 800px; */
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    background: black;
-    display: flex;
-}
-
 main.landingPage > .content > table {
     top: 200px;
     position: relative;

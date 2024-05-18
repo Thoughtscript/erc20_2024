@@ -3,12 +3,13 @@ main.landingPage {
 }
 
 main.landingPage > .content {
-    width: 100%;
     height: 800px;
     text-align: center;
-    align-content: center;
-    justify-content: center;
-    background: black;
+    background: #FDFDFD;
+    place-content: center;
+    width: 100%;
+    display: flex;
+    border-bottom: 2px dashed black;
 }
 
 main.landingPage > .content > .text {
@@ -16,7 +17,7 @@ main.landingPage > .content > .text {
     align-content: center;
     justify-content: center;
     position: relative;
-    color: white;
+    color: black;
     text-transform: lowercase;
     letter-spacing: 3px;
     font-size: 25px;

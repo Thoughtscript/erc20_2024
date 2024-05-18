@@ -12,6 +12,6 @@ import './CustomHeader.css'
 
 export default () =>
     <header>
-        <h2>ERC20 2024 Example</h2>
+        <h2>ERC2024</h2>
         <Menu/>
     </header>

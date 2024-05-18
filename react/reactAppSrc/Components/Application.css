@@ -10,17 +10,26 @@ body, #react_app_root {
     top: 0;
     left: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 main {
-    position: absolute;
     top: 0;
-    /* Use exact height and match footer top */
-    height: 2400px;
     width: 100%;
 }
 
-footer {
-    /* Use exact px and match main height */
-    top: 2400px;
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+::-webkit-scrollbar-track {
+    background: gray;
 }

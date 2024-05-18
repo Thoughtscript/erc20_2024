@@ -9,7 +9,7 @@ Some big changes:
 1. [Hard Hat](https://hardhat.org/hardhat-network/docs/overview) is now preferred [post-Truffle and Ganache](https://archive.trufflesuite.com/docs/truffle/how-to/migrate-to-hardhat/)
 2. [ethers](https://www.npmjs.com/package/ethers) is better maintained and typically used now instead of [web3](https://www.npmjs.com/package/web3).
 
-## Installation
+## Installation and Use
 
 ```bash
 # Copies contracts dir into both containers for:
@@ -17,6 +17,8 @@ Some big changes:
 ## 2.) Compilation and deployment
 bash run.sh
 ```
+
+> Access the React App at: http://localhost:1234/
 
 ## Resources and Links
 

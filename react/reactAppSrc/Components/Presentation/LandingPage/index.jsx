@@ -13,11 +13,23 @@ import YouTubeComponent from "../YouTubeComponent";
 
 export default () =>
     <main className="landingPage">
-        <UnsplashSection photo={'1591858219137-84737f6e8a67'} ixid={'eyJhcHBfaWQiOjEyMDd9'}/>
+        <UnsplashSection photo={'1559251606-c623743a6d76'} ixid={'M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} w={'3870'}/>
+
         <div className="content">
             <div className="text">
                 Lorem Ipsum
             </div>
         </div>
-        <YouTubeComponent className="more" url={"https://www.youtube.com/embed/oHHSSJDJ4oo"}/>
+        <div className="content">
+            <div className="text">
+                Lorem Ipsum
+            </div>
+        </div>
+        <div className="content">
+            <div className="text">
+                Lorem Ipsum
+            </div>
+        </div>
+        
+        <YouTubeComponent className="more" url={"https://www.youtube.com/embed/LXNYWb3reeg"}/>
     </main>

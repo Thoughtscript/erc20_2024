@@ -9,9 +9,9 @@
 import React from 'react'
 import './UnsplashSection.css'
 
-const STYLE = (photo, ixid) => {
+const STYLE = (photo, ixid, w) => {
     return {
-        'backgroundImage': `url('https://images.unsplash.com/photo-${photo}?ixlib=rb-1.2.1&ixid=${ixid}&auto=format&fit=crop&w=1000&q=80')`
+        'backgroundImage': `url('https://images.unsplash.com/photo-${photo}?ixlib=rb-1.2.1&ixid=${ixid}&auto=format&fit=crop&w=${w}&q=80')`
     }
 }
 
