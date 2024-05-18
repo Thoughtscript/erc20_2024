@@ -4,6 +4,8 @@
 [![](https://img.shields.io/badge/ERC-20-blue.svg)](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 [![](https://img.shields.io/badge/React-18.2.0-orange.svg)](https://react.dev/)
 
+Dockerized testnet and simple React client to interact with deployed smart contract and accounts.
+
 Some big changes:
 
 1. [Hard Hat](https://hardhat.org/hardhat-network/docs/overview) is now preferred [post-Truffle and Ganache](https://archive.trufflesuite.com/docs/truffle/how-to/migrate-to-hardhat/).

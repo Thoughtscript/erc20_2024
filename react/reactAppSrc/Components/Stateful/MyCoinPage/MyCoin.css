@@ -6,8 +6,10 @@ main.landingPage > .content > table {
     letter-spacing: 3px;
     font-size: 25px;
     font-weight: 900;
-    width:50%;
+    width: 75%;
     padding-bottom: 400px;
+    left: 13.5%;
+    text-align: left;
 }
 
 table > tbody > tr > th, table > thead > tr > th {

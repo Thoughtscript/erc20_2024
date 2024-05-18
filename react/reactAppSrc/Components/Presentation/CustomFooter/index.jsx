@@ -15,5 +15,6 @@ export default () =>
         <ul>
             <li><CustomLink url={'https://www.linkedin.com/in/adamintaegerard/'} label={'LinkedIn'}/></li>
             <li><CustomLink url={'https://thoughtscript.io/landing.html'} label={'Thoughtscript.io'}/></li>
+            <li><CustomLink url={'https://github.com/Thoughtscript/erc20_2024'} label={'GitHub'}/></li>
         </ul>
     </footer>

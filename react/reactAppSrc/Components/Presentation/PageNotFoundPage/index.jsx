@@ -12,12 +12,24 @@ import YouTubeComponent from '../YouTubeComponent'
 import UnsplashSection from "../UnsplashSection";
 
 export default () =>
-    <main className="notFoundPage">
-        <UnsplashSection photo={'1591858219137-84737f6e8a67'} ixid={'eyJhcHBfaWQiOjEyMDd9'}/>
+    <main className="landingPage">
+        <UnsplashSection photo={'1559251606-c623743a6d76'} ixid={'M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} w={'3870'}/>
+        
         <div className="content">
             <div className="text">
-                404. Whoops! You landed on the wrong page (But hey... check out the sweet video below)!
+                404. Whoops! You landed on the wrong page...
             </div>
         </div>
-        <YouTubeComponent className="more" url={"https://www.youtube.com/embed/oHHSSJDJ4oo"}/>
+        <div className="content">
+            <div className="text">
+                Lorem Ipsum
+            </div>
+        </div>
+        <div className="content">
+            <div className="text">
+                Lorem Ipsum
+            </div>
+        </div>
+
+        <YouTubeComponent className="more" url={"https://www.youtube.com/embed/LXNYWb3reeg"}/>
     </main>

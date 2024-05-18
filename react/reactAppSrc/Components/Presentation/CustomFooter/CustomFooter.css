@@ -17,14 +17,15 @@ footer > ul > li {
 }
 
 footer > ul > li > a {
-    color: black;
-    padding-left: 50px;
+    color: #000;
+    padding-left: 15px;
     padding-right: 50px;
-    text-decoration: none;
     font-size: 18px;
+    text-decoration: none;
 }
 
 footer > ul > li > a:hover {
-    opacity: .8;
-    text-decoration: underline;
+    opacity: .7;
+    transition: 1.25s all;
+    border-left: 6.5px solid deeppink;
 }
