@@ -1,5 +1,5 @@
 # FROM node:lts
-FROM node:20.0
+FROM node:20.9
 # hardhat only supports lts
 
 RUN echo "Creating working dir and copying files"
@@ -7,6 +7,8 @@ RUN mkdir /app
 WORKDIR /app
 COPY . .
 
+# Required hardhat version dependency
+RUN npm install -g npm@10.8.2
 RUN npm i
 RUN npm i npx
 

@@ -16,12 +16,12 @@
     ],
     "author": "Adam I. Gerard",
     "devDependencies": {
-      "@nomicfoundation/hardhat-ignition": "=0.15.4",
-      "@nomicfoundation/hardhat-ignition-ethers": "=0.15.4",
+      "@nomicfoundation/hardhat-ignition": "=0.15.5",
+      "@nomicfoundation/hardhat-ignition-ethers": "=0.15.5",
       "@nomicfoundation/hardhat-toolbox": "=5.0.0",
       "@openzeppelin/contracts": "=5.0.2",
-      "ethers": "=6.12.1",
-      "hardhat": "=2.22.3"
+      "ethers": "=6.13.2",
+      "hardhat": "^2.22.72.0.4"
     },
     "dependencies": {
     }
