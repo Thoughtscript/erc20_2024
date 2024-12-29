@@ -80,8 +80,8 @@ export class MyCoin extends React.Component {
                             { 
                                 (accounts).map(a =>
                                     <tr key={a[0]}>
-                                        <th>{a[0] === CONTRACT_ADDRESS ? `(MyCoin) ${a[0]}`: a[0]}</th>
-                                        <th>{a[1]} ETH</th>
+                                        <td>{a[0] === CONTRACT_ADDRESS ? `(MyCoin) ${a[0]}`: a[0]}</td>
+                                        <td>{a[1]} ETH</td>
                                     </tr>
                                 )
                             }
