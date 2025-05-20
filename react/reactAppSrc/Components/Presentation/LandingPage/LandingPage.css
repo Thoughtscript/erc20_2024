@@ -9,7 +9,7 @@ main.landingPage > .content {
     place-content: center;
     width: 100%;
     display: flex;
-    border-bottom: 2px dashed black;
+    border-bottom: 1px dashed black;
 }
 
 main.landingPage > .content > .text {

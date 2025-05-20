@@ -1,5 +1,5 @@
 # FROM node:lts
-FROM node:20.9
+FROM node:20.19.2
 # hardhat only supports lts
 
 RUN echo "Creating working dir and copying files"
@@ -8,9 +8,10 @@ WORKDIR /app
 COPY . .
 
 # Required hardhat version dependency
-RUN npm install -g npm@10.8.2
+RUN npm install -g npm@10.9.2
 RUN npm i
-RUN npm i npx
+# RUN npm i npx
+## Bundled now in npm
 
 # Compile and deploy contracts to local testnet
 # https://hardhat.org/hardhat-runner/docs/guides/deploying
