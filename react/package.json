@@ -36,14 +36,14 @@
       "postcss": "=8.4.16",
       "process": "^0.11.10",
 
-      "@nomicfoundation/hardhat-ignition": "=0.15.5",
-      "@nomicfoundation/hardhat-ignition-ethers": "=0.15.5",
-      "@nomicfoundation/hardhat-toolbox": "=5.0.0",
+      "@nomicfoundation/hardhat-ignition": "=0.15.12",
+      "@nomicfoundation/hardhat-ignition-ethers": "=0.15.12",
+      "@nomicfoundation/hardhat-toolbox": "=6.0.0",
       "@openzeppelin/contracts": "=5.0.2",
-      "hardhat": "^2.22.72.0.4"
+      "hardhat": "=2.25.0"
     },
     "dependencies": {
-      "ethers": "=6.13.2",
+      "ethers": "=6.14.4",
       "react": "=18.2.0",
       "react-dom": "=18.2.0",
       "react-redux": "=8.0.2",

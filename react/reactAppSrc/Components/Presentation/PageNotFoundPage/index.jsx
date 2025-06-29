@@ -6,7 +6,6 @@
  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
  */
 
-import React from 'react'
 import './PageNotFoundPage.css'
 import YouTubeComponent from '../YouTubeComponent'
 import UnsplashSection from "../UnsplashSection";

@@ -6,7 +6,6 @@
  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
  */
 
-import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import CustomHeader from '../../Presentation/CustomHeader'
 import './Router.css'

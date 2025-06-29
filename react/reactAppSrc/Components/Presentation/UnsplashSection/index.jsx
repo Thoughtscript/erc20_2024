@@ -6,7 +6,6 @@
  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
  */
 
-import React from 'react'
 import './UnsplashSection.css'
 
 const STYLE = (photo, ixid, w, bgc) => {
