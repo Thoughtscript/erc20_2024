@@ -1,6 +1,6 @@
 # ERC20_2024
 
-[![](https://img.shields.io/badge/HardHat-2.22.3-yellow.svg)](https://hardhat.org/docs)
+[![](https://img.shields.io/badge/HardHat-2.25.0-yellow.svg)](https://hardhat.org/docs)
 [![](https://img.shields.io/badge/ERC-20-blue.svg)](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 [![](https://img.shields.io/badge/React-18.2.0-orange.svg)](https://react.dev/)
 
