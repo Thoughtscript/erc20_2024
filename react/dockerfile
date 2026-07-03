@@ -1,5 +1,5 @@
 # FROM node:lts
-FROM node:20.19.2
+FROM node:24.0.0
 # hardhat only supports lts
 
 RUN echo "Creating working dir and copying files"
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Required hardhat version dependency
-RUN npm install -g npm@10.9.2
+RUN npm install -g npm@11.18.0
 RUN npm i
 # RUN npm i npx
 ## Bundled now in npm

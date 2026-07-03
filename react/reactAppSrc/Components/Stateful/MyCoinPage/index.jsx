@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- *  RailsPage page.
+ *  MyCoinPage page.
  *
  *  @Author - Adam InTae Gerard - https://www.linkedin.com/in/adamintaegerard/
  */

@@ -1,8 +1,7 @@
-require("@nomicfoundation/hardhat-toolbox")
-require("@nomicfoundation/hardhat-ignition")
-require("@nomicfoundation/hardhat-ignition-ethers")
+import { defineConfig } from "hardhat/config"
+import hardhatToolboxViem from "@nomicfoundation/hardhat-toolbox-viem"
 
-/** @type import('hardhat/config').HardhatUserConfig */
-module.exports = {
-    solidity: "0.8.24",
-};
+export default defineConfig({
+  plugins: [hardhatToolboxViem],
+  solidity: "0.8.28",
+})

@@ -2,6 +2,7 @@
     "name": "react_2024",
     "version": "1.0.0",
     "description": "2024 react scaffold",
+    "type": "module",
     "scripts": {
       "live": "npx serve",
       "stop-win": "Taskkill /IM node.exe /F",
@@ -36,11 +37,11 @@
       "postcss": "=8.4.16",
       "process": "^0.11.10",
 
-      "@nomicfoundation/hardhat-ignition": "=0.15.12",
-      "@nomicfoundation/hardhat-ignition-ethers": "=0.15.12",
-      "@nomicfoundation/hardhat-toolbox": "=6.0.0",
+      "@nomicfoundation/hardhat-ignition": "=3.1.6",
+      "@nomicfoundation/hardhat-ignition-ethers": "=3.1.6",
+      "@nomicfoundation/hardhat-toolbox-viem": "=5.0.7",
       "@openzeppelin/contracts": "=5.0.2",
-      "hardhat": "=2.25.0"
+      "hardhat": "=3.9.1"
     },
     "dependencies": {
       "ethers": "=6.14.4",

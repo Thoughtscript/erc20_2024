@@ -1,13 +1,8 @@
-const M = require("@nomicfoundation/hardhat-ignition/modules")
+import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
+import artifact from '../../artifacts/contracts/MyCoin.sol/MyCoin.json'
 
-module.exports = M.buildModule("MyCoinDeploymentModule", (m) => {
+export default buildModule("MyCoin", (m) => {
+  const myCoin = m.contract("MyCoin", artifact);
 
-  const myCoin = m.contract(
-    "MyCoin",
-    require("../../artifacts/contracts/MyCoin.sol/MyCoin.json"),
-  );
-
-  return {
-    myCoin,
-  };
+  return { myCoin };
 });

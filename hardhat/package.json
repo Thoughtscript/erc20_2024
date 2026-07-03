@@ -6,6 +6,7 @@
       "stop-win": "Taskkill /IM node.exe /F",
       "stop-linux": "killall node"
     },
+    "type": "module",
     "repository": {
       "type": "git",
       "url": "https://github.com/Thoughtscript/erc20_2024"
@@ -16,12 +17,12 @@
     ],
     "author": "Adam I. Gerard",
     "devDependencies": {
-      "@nomicfoundation/hardhat-ignition": "=0.15.12",
-      "@nomicfoundation/hardhat-ignition-ethers": "=0.15.12",
-      "@nomicfoundation/hardhat-toolbox": "=6.0.0",
+      "@nomicfoundation/hardhat-ignition": "=3.1.6",
+      "@nomicfoundation/hardhat-ignition-ethers": "=3.1.6",
+      "@nomicfoundation/hardhat-toolbox-viem": "=5.0.7",
       "@openzeppelin/contracts": "=5.0.2",
       "ethers": "=6.14.4",
-      "hardhat": "=2.25.0"
+      "hardhat": "=3.9.1"
     },
     "dependencies": {
     }
